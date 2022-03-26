@@ -1,0 +1,14 @@
+{
+  "name": "EventBlown",
+  "version": "1.0.0",
+  "description": "EventBlown is a platform to help event planners showcase their events online",
+  "main": "app.js",
+  "repository": "https://github.com/olatocode/EventBlown.git",
+  "author": "Tobi Awosola",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8"
+  }
+}
