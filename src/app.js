@@ -1,15 +1,13 @@
 /** @format */
-
 const express = require('express');
 const dotenv = require('dotenv');
+const userRouter = require('./routes/user.route');
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 dotenv.config();
 
-const { PORT } = process.env;
+app.use('/api/v1', userRouter);
 
-app.listen(PORT, () => {
-  console.log(`EventBlown is running on port ${PORT}`);
-});
+module.exports = app;
