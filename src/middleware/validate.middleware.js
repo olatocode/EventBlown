@@ -16,4 +16,11 @@ const validateUser = Joi.object({
     .required(),
 });
 
-module.exports = validateUser;
+const validateEvent = Joi.object({
+  name: Joi.string().min(3).max(20).required(),
+  location: Joi.string().min(10).max(13).required(),
+  amount: Joi.string().min(4).required(),
+  image: Joi.string().required(),
+});
+
+module.exports = { validateUser, validateEvent };
