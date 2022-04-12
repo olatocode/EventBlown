@@ -1,7 +1,7 @@
 /** @format */
 const jwt = require('jsonwebtoken');
 const Admin = require('../models/admin.model');
-const validateUser = require('../middleware/validate.middleware');
+const { validateAdmin } = require('../middleware/validate.middleware');
 const bcrypt = require('bcryptjs');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -11,7 +11,7 @@ const { SECRET_TOKEN } = process.env;
 exports.addAdmin = async (req, res, next) => {
   try {
     const { userName, phoneNumber, gender, email, password } = req.body;
-    await validateUser.validateAsync(req.body);
+    await validateAdmin.validateAsync(req.body);
 
     let emailExist = await Admin.findOne({ email: email });
     if (emailExist) {

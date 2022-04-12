@@ -1,8 +1,13 @@
 /** @format */
 
+const jwt = require('jsonwebtoken');
 const User = require('../models/user.model');
-const validateUser = require('../middleware/validate.middleware');
+const { validateUser } = require('../middleware/validate.middleware');
 const bcrypt = require('bcryptjs');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { SECRET_TOKEN } = process.env;
 
 exports.addUser = async (req, res, next) => {
   try {
@@ -51,15 +56,16 @@ exports.userLogin = async (req, res, next) => {
         message: 'Password Not Correct',
       });
     }
-    // const data = {
-    //   id: emailExist._id,
-    //   email: emailExist.email,
-    //   role: emailExist.role,
-    // };
+    const data = {
+      id: emailExist._id,
+      email: emailExist.email,
+      role: emailExist.role,
+    };
 
-    // const token = await jwt.sign(data, BL_TOKEN, { expiresIn: '1h' });
+    const token = await jwt.sign(data, SECRET_TOKEN, { expiresIn: '1h' });
     return res.status(200).json({
       message: 'User login successfully',
+      token,
     });
   } catch (error) {
     return res.status(500).json({
