@@ -1,29 +1,70 @@
 /** @format */
-
-const validateEvent = require('../middleware/validate.middleware');
+const Events = require('../models/event.model');
+const cloudinaryUploadMethod = require('../utils/cloudinary');
+const path = require('path');
+const express = require('express');
+const router = express.Router();
+const AppError = require('../utils/appError');
+const upload = require('../utils/multer');
 const db = require('../database/postgresdb');
-const dotenv = require('dotenv');
-dotenv.config();
 
+// add new event
 exports.addEvent = async (req, res, next) => {
   try {
-    const { name, location, amount, image } = req.body;
-    // validating reg.body with joi
-     await validateEvent.validateAsync(req.body);
+    const urls = [];
+    const files = req.files;
+    if (!files) return next(new AppError('No picture attached..', 400));
+    for (const file of files) {
+      const { path } = file;
+      const newPath = await cloudinaryUploadMethod(path);
 
-    //  Creating new Event
-    const { rows } = await db.query(
-      'INSERT INTO events (name, location, amount, image) VALUES ($1, $2, $3, $4)',
-      [name, location, amount, image]
+      urls.push(newPath);
+    }
+    images = urls.map((url) => url.res);
+
+    const { name, location, ticketAmount } = req.body;
+    // validating reg.body with joi
+    // await validateEvents.validateAsync(req.body);
+    pictures = images;
+    await db.query(
+      'INSERT INTO Events (name, location, ticketAmount, pictures) VALUES ($1, $2, $3, $4)',
+      [name, location, ticketAmount, images]
     );
     return res.status(201).json({
-      message: 'Events created Successfully',
-      body: {
-        Events: { name, location, amount, image },
-      },
+      message: 'Event  created',
+      images: images,
     });
   } catch (error) {
     console.log(error);
+    return res.status(500).json({ message: error.message });
+  }
+};
+
+//   fetch all available Events
+
+exports.fetchAllEvents = async (req, res, next) => {
+  try {
+    const { page } = req.query;
+    // pagination
+    const allEvents = await db.query(
+      `SELECT * FROM Events Order By id LIMIT 5 OFFSET ${(page - 1) * 5}`
+    );
+    if (
+      allEvents.rows[0] == null ||
+      !allEvents.rows[0] ||
+      allEvents.rows[0] == []
+    ) {
+      return res.status(404).json({
+        message: 'page not found',
+      });
+    }
+    const count = await db.query('SELECT COUNT(*)FROM events');
+    return successResMsg(res, 200, {
+      message: 'Events fetch successfully',
+      count: count.rows[0],
+      allEvents: allEvents.rows,
+    });
+  } catch (error) {
     return res.status(500).json({ message: error.message });
   }
 };

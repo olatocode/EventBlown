@@ -1,9 +1,20 @@
 /** @format */
 
-const Event = require('../controllers/event.controller');
+//  require dependencies
 const express = require('express');
 const router = express.Router();
+const { authenticate, authorize } = require('../middleware/auth.middleware');
+const { addEvent, fetchAllEvents } = require('../controllers/event.controller');
+const upload = require('../utils/multer');
+//  creating  route
+router.post(
+  '/createEvent',
+  authenticate,
+  authorize,
+  upload.array('pictures', 20),
+  addEvent
+);
+router.get('/showAllEvents', fetchAllEvents);
 
-router.post('/createEvents', Event.addEvent);
-
+//    exporting modules
 module.exports = router;

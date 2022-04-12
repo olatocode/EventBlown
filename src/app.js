@@ -9,6 +9,7 @@ const profileRoutes = require('./routes/profile.route');
 const userRouter = require('./routes/user.route');
 const adminRouter = require('./routes/admin.route');
 const eventRouter = require('./routes/event.route');
+const eventBookingRouter = require('./routes/eventBooking.route');
 
 dotenv.config();
 const app = express();
@@ -47,6 +48,7 @@ app.use(passport.session());
 app.use('/api/v1', userRouter);
 app.use('/api/v1', adminRouter);
 app.use('/api/v1', eventRouter);
+app.use('/api/v1', eventBookingRouter);
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 
@@ -58,5 +60,3 @@ app.use(express.urlencoded({ extended: true }));
 app.listen(PORT, () => {
   console.log(`EventBlown is running on port ${PORT}`);
 });
-
-//module.exports = app;
