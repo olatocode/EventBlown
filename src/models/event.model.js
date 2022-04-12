@@ -5,8 +5,8 @@ class Events {
     this.id = id;
     this.name = name;
     this.location = location;
-    this.amount = amount;
-    this.image = image;
+    this.ticketAmount = ticketAmount;
+    this.images = images;
   }
 }
 

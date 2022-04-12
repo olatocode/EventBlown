@@ -1,14 +1,13 @@
 /** @format */
 const express = require('express');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./utils/keys');
 const authRoutes = require('./routes/auth.route');
 const profileRoutes = require('./routes/profile.route');
-const passportSetup = require('./utils/passportSetup');
 const userRouter = require('./routes/user.route');
+const adminRouter = require('./routes/admin.route');
 const eventRouter = require('./routes/event.route');
 
 dotenv.config();
@@ -32,7 +31,6 @@ app.get('/', (req, res) => {
   res.send('hello world');
 });
 
-
 // set up session cookies
 app.use(
   cookieSession({
@@ -47,6 +45,7 @@ app.use(passport.session());
 
 // set up routes
 app.use('/api/v1', userRouter);
+app.use('/api/v1', adminRouter);
 app.use('/api/v1', eventRouter);
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
@@ -59,6 +58,5 @@ app.use(express.urlencoded({ extended: true }));
 app.listen(PORT, () => {
   console.log(`EventBlown is running on port ${PORT}`);
 });
-
 
 //module.exports = app;
