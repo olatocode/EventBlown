@@ -1,11 +1,13 @@
+/** @format */
+
 const mongoose = require('mongoose');
 
 // connect to mongodb
 const connect_MongoDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URL, {
+    await mongoose.connect(process.env.DATABASE_URL, {
       useNewUrlParser: true,
-      useUnifiedTopology: true
+      useUnifiedTopology: true,
     });
     console.log('Connected to MongoDB');
   } catch (error) {
