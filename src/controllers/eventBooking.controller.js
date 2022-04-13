@@ -22,7 +22,7 @@ const bookEvents = async (req, res, next) => {
       'INSERT INTO eventBooking ( numberOfTickets, totalAmount, events_id) VALUES ($1, $2, $3) RETURNING *',
       [numberOfTickets, totalAmount, events_id]
     );
-    return successResMsg(res, 201, {
+    return res.status(201).json({
       message: 'Events booked',
       newbooking: newbooking.rows[0],
     });
@@ -56,7 +56,7 @@ const bookingPayment = async (req, res, next) => {
     return res.status(500).json({ message: error.message });
   }
 };
-//   making payment using paystack
+//   making payment using flutterwave
 const paymentVerification = async (req, res, next) => {
   try {
     const { reference } = req.query;
