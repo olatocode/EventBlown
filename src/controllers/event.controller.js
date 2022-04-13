@@ -58,7 +58,7 @@ exports.fetchAllEvents = async (req, res, next) => {
       });
     }
     const count = await db.query('SELECT COUNT(*)FROM events');
-    return successResMsg(res, 200, {
+    return res.status(200).json({
       message: 'Events fetch successfully',
       count: count.rows[0],
       allEvents: allEvents.rows,
