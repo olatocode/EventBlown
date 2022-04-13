@@ -43,7 +43,7 @@ exports.addEvent = async (req, res, next) => {
 
 exports.fetchAllEvents = async (req, res, next) => {
   try {
-    const { page } = req.query;
+    const { page } = req.headers;
     // pagination
     const allEvents = await db.query(
       `SELECT * FROM Events Order By id LIMIT 5 OFFSET ${(page - 1) * 5}`
