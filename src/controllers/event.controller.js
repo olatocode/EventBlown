@@ -25,14 +25,13 @@ exports.addEvent = async (req, res, next) => {
     const { name, location, ticketAmount } = req.body;
     // validating reg.body with joi
     // await validateEvents.validateAsync(req.body);
-    pictures = images;
-    await db.query(
-      'INSERT INTO Events (name, location, ticketAmount, pictures) VALUES ($1, $2, $3, $4)',
+    const events = await db.query(
+      'INSERT INTO Events (name, location, ticketAmount, images) VALUES ($1, $2, $3, $4) RETURNING *',
       [name, location, ticketAmount, images]
     );
     return res.status(201).json({
       message: 'Event  created',
-      images: images,
+      data: events.rows,
     });
   } catch (error) {
     console.log(error);

@@ -9,9 +9,9 @@ const upload = require('../utils/multer');
 //  creating  route
 router.post(
   '/createEvent',
-  authenticate,
-  authorize,
-  upload.array('pictures', 20),
+  // authenticate,
+  // authorize,
+  upload.array('pictures'),
   addEvent
 );
 router.get('/showAllEvents', fetchAllEvents);
