@@ -26,6 +26,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     require: [true, 'Fill in the required field'],
   },
+  isVerified: {
+    type: Boolean,
+    default: false,
+  },
   role: {
     type: String,
     enum: ['User'],

@@ -2,8 +2,9 @@
 
 class eventBooking {
   constructor() {
-    this.events_id = this.events_id;
     this.numberOfTickets = numberOfTickets;
+    this.amountPerTicket = amountPerTicket;
+    this.totalAmount = this.totalAmount;
   }
 }
 
