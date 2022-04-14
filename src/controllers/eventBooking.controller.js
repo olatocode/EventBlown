@@ -11,14 +11,14 @@ const db = require('../database/postgresdb');
 // booking an event
 const bookEvents = async (req, res, next) => {
   try {
-    const { numberOfTickets, amountPerTicket } = req.body;
+    const { numberOfTickets, amountPerTicket, events_id } = req.body;
     // validating reg.body with joi
     // await validatebooking.validateAsync(req.body);
 
     let totalAmount = numberOfTickets * amountPerTicket;
     // booking
     const newbooking = await db.query(
-      'INSERT INTO eventBooking ( numberOfTickets, amountPerTicket, totalAmount, events_id) VALUES ($1, $2, $3, 4$) RETURNING *',
+      'INSERT INTO eventBooking ( numberOfTickets, amountPerTicket, totalAmount, events_id) VALUES ($1, $2, $3, $4) RETURNING *',
       [numberOfTickets, amountPerTicket, totalAmount, events_id]
     );
     return res.status(201).json({
