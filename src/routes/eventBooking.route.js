@@ -9,7 +9,7 @@ const {
 } = require('../controllers/eventBooking.controller');
  const { authenticate } = require('../middleware/auth.middleware');
 //  creating route
-router.post('/bookEvent', bookEvents);
+router.post('/bookEvent', authenticate, bookEvents);
 router.post('/payment', authenticate, bookingPayment);
 router.get('/verification/payment', authenticate, paymentVerification);
 

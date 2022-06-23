@@ -2,7 +2,7 @@
 
 class Events {
   constructor() {
-    this.id = id;
+    this.event_id = event_id;
     this.name = name;
     this.location = location;
     this.ticketAmount = ticketAmount;

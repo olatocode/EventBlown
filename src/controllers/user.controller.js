@@ -197,6 +197,7 @@ exports.resetPassword = async (req, res, next) => {
       message: `Password has been updated successfully.`,
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       message: `${error.message}, Try agin later.`,
     });
