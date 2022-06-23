@@ -29,7 +29,7 @@ app.get('/auth', (req, res) => {
 });
 // home page
 app.get('/', (req, res) => {
-  res.send('hello world');
+  res.send('Welcome To Event Blown App');
 });
 
 // set up session cookies
