@@ -10,6 +10,7 @@ const userRouter = require('./routes/user.route');
 const adminRouter = require('./routes/admin.route');
 const eventRouter = require('./routes/event.route');
 const eventBookingRouter = require('./routes/eventBooking.route');
+const debug = require('debug');
 
 dotenv.config();
 const app = express();
@@ -22,6 +23,12 @@ app.set('view engine', 'ejs');
 const connect_MongoDB = require('./database/mongodb');
 const connect_PostgresDB = require('./database/postgresdb');
 const { PORT } = process.env;
+
+const name = 'My App';
+
+// fake app
+
+debug('booting %o', name);
 
 // google home page
 app.get('/auth', (req, res) => {
