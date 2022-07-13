@@ -44,7 +44,7 @@ exports.addUser = async (req, res, next) => {
 exports.userLogin = async (req, res, next) => {
   try {
     const { email, password } = req.body;
-    const emailExist = await User.findOne({ email });
+    const emailExist = await User.find({ email });
     if (!emailExist) {
       return res.status(401).json({
         message: 'Email does not exist, please create an account',
