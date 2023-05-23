@@ -1,11 +1,6 @@
 /** @format */
-const Events = require('../models/event.model');
 const cloudinaryUploadMethod = require('../utils/cloudinary');
-const path = require('path');
-const express = require('express');
-const router = express.Router();
 const AppError = require('../utils/appError');
-const upload = require('../utils/multer');
 const db = require('../database/postgresdb');
 
 // add new event
@@ -31,7 +26,7 @@ exports.addEvent = async (req, res, next) => {
     );
     return res.status(201).json({
       message: 'Event  created',
-      data: events.rows,
+      data: events.rows[0],
     });
   } catch (error) {
     console.log(error);
