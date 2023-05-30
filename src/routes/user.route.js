@@ -3,9 +3,6 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../controllers/user.controller');
-const { initKeycloak, getKeycloak } =
-  require('../config/keycloak.config').getKeycloak;
-
 router.post('/createUser', User.addUser);
 router.post('/userLogin', User.userLogin);
 
