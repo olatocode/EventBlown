@@ -17,3 +17,26 @@
 ## Author
 
 - [Tobi Awosola](https://www.github.com/olatocode)
+
+- 
+## Installation on lacal environment
+
+Clone project 
+
+```bash
+  git clone https://github.com/olatocode/EventBlown.git
+  cd EventBlown 
+```
+
+Install dependencies using yarn 
+
+```bash
+  yarn  
+```
+
+
+Start the app
+
+```bash
+  yarn dev 
+```
