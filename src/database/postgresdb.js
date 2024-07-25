@@ -1,26 +1,23 @@
 /** @format */
 
-const Pool = require('pg').Pool;
+// config/database.js
+
+const { Sequelize } = require('sequelize');
 const dotenv = require('dotenv');
 
 dotenv.config();
 
-const eventPool = new Pool({
-  connectionString: process.env.DBCONLINK,
-  ssl: {
-    rejectUnauthorized: false,
-  },
-});
-eventPool.query('SELECT NOW()', (err, res) => {
-  if (!err) {
-    console.log('Connected to PostgresDB');
-  } else {
-    console.log(err.message);
-  }
-});
+const sequelize = new Sequelize(
+  process.env.DBCONLINK
+);
 
-// module.exports = {
-//   query: (text, params) => pool.query(text, params),
-// };
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Database connected successfully');
+  })
+  .catch((error) => {
+    console.log(error.message);
+  });
 
-module.exports = eventPool;
+module.exports = sequelize;

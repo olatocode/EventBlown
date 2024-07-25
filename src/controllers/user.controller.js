@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs');
 const dotenv = require('dotenv');
 dotenv.config();
 
-const { SECRET_TOKEN } = process.env;
+const SECRET_TOKEN = process.env;
 
 exports.addUser = async (req, res, next) => {
   try {
