@@ -1,0 +1,53 @@
+{"level":"info","message":"EventBlown is running on port localhost:4000","timestamp":"2024-08-01T13:42:42.566Z"}
+{"level":"info","message":"EventBlown is running on port localhost:4000","timestamp":"2024-08-01T13:44:18.816Z"}
+{"level":"info","message":"EventBlown is running on port localhost:4000","timestamp":"2024-08-01T13:49:10.760Z"}
+{"level":"info","message":"::1 - - [01/Aug/2024:13:49:55 +0000] \"POST /api/v1/register HTTP/1.1\" 200 340 \"-\" \"PostmanRuntime/7.40.0\"","timestamp":"2024-08-01T13:49:55.275Z"}
+{"level":"info","message":"EventBlown is running on port localhost://4000","timestamp":"2024-08-01T13:50:41.577Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-01T13:51:09.320Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2024:13:51:20 +0000] \"GET / HTTP/1.1\" 200 39 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0\"","timestamp":"2024-08-01T13:51:20.743Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-01T14:00:34.992Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-08T15:24:29.777Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-10T10:23:48.048Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:05:41.672Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:06:13 +0000] \"POST /api/v1/register HTTP/1.1\" 500 637 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:06:13.568Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:07:41.923Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:08:23 +0000] \"POST /api/v1/register HTTP/1.1\" 200 341 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:08:23.994Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:09:20 +0000] \"POST /api/v1/login HTTP/1.1\" 401 486 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:09:20.462Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:12:10 +0000] \"POST /api/v1/register HTTP/1.1\" 200 340 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:12:10.266Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:13:10 +0000] \"POST /api/v1/login HTTP/1.1\" 200 327 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:13:10.916Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:13:30 +0000] \"POST /api/v1/login HTTP/1.1\" 401 401 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:13:30.557Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:14:10 +0000] \"POST /api/v1/login HTTP/1.1\" 401 401 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:14:10.012Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:17:36.431Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:20:02.230Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:45:58 +0000] \"POST /api/v1/login HTTP/1.1\" 401 401 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:45:58.951Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:47:45.045Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:48:02.832Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:48:24 +0000] \"POST /api/v1/login HTTP/1.1\" 401 401 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:48:24.635Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T09:51:02.984Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:51:12 +0000] \"POST /api/v1/login HTTP/1.1\" 400 1084 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:51:12.245Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:52:16 +0000] \"POST /api/v1/login HTTP/1.1\" 400 1084 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:52:16.293Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:09:52:34 +0000] \"POST /api/v1/login HTTP/1.1\" 200 79 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T09:52:34.723Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:28:03.210Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:28:13 +0000] \"POST /api/v1/login HTTP/1.1\" 200 261 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:28:13.093Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:34:02.209Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:34:23 +0000] \"POST /api/v1/login HTTP/1.1\" 200 261 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:34:23.216Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:34:33 +0000] \"POST /api/v1/login HTTP/1.1\" 200 261 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:34:33.608Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:38:22.108Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:52:23.302Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:52:58 +0000] \"POST /api/v1/register HTTP/1.1\" 200 337 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:52:58.933Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:53:14 +0000] \"POST /api/v1/register HTTP/1.1\" 409 493 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:53:14.282Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:53:32 +0000] \"POST /api/v1/register HTTP/1.1\" 200 333 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:53:32.157Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:54:56.604Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:55:16 +0000] \"POST /api/v1/register HTTP/1.1\" 400 1076 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:55:16.050Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:56:05.404Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:57:10 +0000] \"POST /api/v1/register HTTP/1.1\" 200 333 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:57:10.347Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:57:47.070Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:58:21.636Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T10:58:51.084Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:10:59:02 +0000] \"POST /api/v1/register HTTP/1.1\" 400 1076 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T10:59:02.318Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:11:00:52 +0000] \"POST /api/v1/register HTTP/1.1\" 409 493 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T11:00:52.735Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:11:01:06 +0000] \"POST /api/v1/register HTTP/1.1\" 200 338 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T11:01:06.700Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T11:02:54.563Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T11:03:15.827Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:11:03:38 +0000] \"POST /api/v1/register HTTP/1.1\" 200 91 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T11:03:38.082Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:11:04:23 +0000] \"POST /api/v1/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T11:04:23.454Z"}
