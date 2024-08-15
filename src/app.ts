@@ -2,7 +2,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
-import logger  from './utils/logger';
+import logger from './utils/logger';
 import router from './routes/index';
 import healthRouter from './routes/healthRoute';
 dotenv.config();
@@ -26,4 +26,4 @@ app.use('/', healthRouter);
 // api endpoints
 app.use('/api/v1', router);
 
-export { app } ;
+export { app };

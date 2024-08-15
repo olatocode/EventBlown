@@ -53,3 +53,29 @@
 {"level":"info","message":"::1 - - [13/Aug/2024:11:04:23 +0000] \"POST /api/v1/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.0\"","timestamp":"2024-08-13T11:04:23.454Z"}
 {"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T11:43:58.916Z"}
 {"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T11:45:29.390Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:20:23.144Z"}
+{"level":"info","message":"::1 - - [13/Aug/2024:14:21:47 +0000] \"POST /auth/register HTTP/1.1\" 404 153 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-13T14:21:47.236Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:29:21.476Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:31:24.487Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:37:28.180Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:50:43.189Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:52:41.970Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T14:57:45.478Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-13T15:05:00.106Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T09:23:08.423Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T09:42:18.580Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:09:47:41 +0000] \"POST /api/v1/register HTTP/1.1\" 200 91 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T09:47:41.791Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T09:49:48.609Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T09:53:10.467Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T10:01:56.643Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T10:06:52.335Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T10:33:46.722Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:33:58 +0000] \"POST /api/v1/register/ HTTP/1.1\" 409 487 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:33:58.419Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:34:53 +0000] \"POST /api/v1/register/ HTTP/1.1\" 200 91 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:34:53.170Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:35:52 +0000] \"POST /api/v1/ HTTP/1.1\" 404 147 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:35:52.128Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T10:38:05.443Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:39:06 +0000] \"POST /api/v1/auth/ HTTP/1.1\" 404 152 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:39:06.664Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:41:23 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 409 487 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:41:23.216Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:42:50 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 404 483 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:42:50.754Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:44:11 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 200 91 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:44:11.589Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:10:44:31 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:44:31.823Z"}
