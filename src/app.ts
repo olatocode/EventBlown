@@ -2,11 +2,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
+import cors from 'cors';
 import logger from './utils/logger';
 import router from './routes/index';
 import healthRouter from './routes/healthRoute';
 dotenv.config();
 const app = express();
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));

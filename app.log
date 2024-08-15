@@ -79,3 +79,7 @@
 {"level":"info","message":"::1 - - [15/Aug/2024:10:42:50 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 404 483 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:42:50.754Z"}
 {"level":"info","message":"::1 - - [15/Aug/2024:10:44:11 +0000] \"POST /api/v1/auth/register HTTP/1.1\" 200 91 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:44:11.589Z"}
 {"level":"info","message":"::1 - - [15/Aug/2024:10:44:31 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T10:44:31.823Z"}
+{"level":"info","message":"EventBlown is running on port http://localhost:4000","timestamp":"2024-08-15T11:17:08.596Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:11:18:34 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T11:18:34.937Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:11:24:28 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T11:24:28.281Z"}
+{"level":"info","message":"::1 - - [15/Aug/2024:11:26:42 +0000] \"POST /api/v1/auth/login HTTP/1.1\" 200 263 \"-\" \"PostmanRuntime/7.41.1\"","timestamp":"2024-08-15T11:26:42.764Z"}
